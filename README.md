@@ -1,11 +1,11 @@
 # Explicatie
 
 Clasa Person are:
-    -ziua infectarii
-    -varsta (generata random intr-un interval)
-    -sex (Generat random intr-un interval)
-    -categoria de varsta, coresponednta cu varsta
-    -contagios - sansa de 50% de a fi sau nu contagios
+* ziua infectarii
+* varsta (generata random intr-un interval)
+* sex (Generat random intr-un interval)
+* categoria de varsta, coresponednta cu varsta
+* contagios - sansa de 50% de a fi sau nu contagios
 
 Persoana poate genera la randul ei prin funtia generarePersoaneInfectate o lista de persoane avan diferite categorii de varsta ce au intrat in contact cu acea persoana. 
 
