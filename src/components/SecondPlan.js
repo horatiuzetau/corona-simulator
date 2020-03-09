@@ -59,7 +59,7 @@ export default class Simulator {
             console.log("Femei molipsite: " + z.numarMolipsitiDupaSex('F'))
             console.log("Barbati molipsiti: " + z.numarMolipsitiDupaSex('M'))
             console.log("Adolescenti molipsiti: " + z.categoriiDeVarstaMolipsiti('ADOLESCENTA'))
-            console.log("Adolescnti contagiosi molipsiti: " + z.categoriiDeVarstaContagiosi('ADOLESCENTA'))
+            console.log("Adolescnti contagiosi: " + z.categoriiDeVarstaContagiosi('ADOLESCENTA'))
             
         }
     }   

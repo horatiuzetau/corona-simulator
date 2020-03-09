@@ -1,13 +1,14 @@
 import React from 'react';
-import Simulator from './components/Simulator';
 import SecondPlan from './components/SecondPlan'
 
 function App() {
 
 
+  // In 5 zile se studiaza numarul de barbati, femei, adolescenti
+  // au fost contagiati 
   let sp = new SecondPlan();
 
-  let maxZile = 2
+  let maxZile = 5
   
   sp.ruleaza(maxZile)
   sp.arataZile()
