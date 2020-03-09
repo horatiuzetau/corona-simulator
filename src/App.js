@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Simulator from './components/Simulator';
+import SecondPlan from './components/SecondPlan'
 
 function App() {
+
+
+  let sp = new SecondPlan();
+
+  let maxZile = 2
+  
+  sp.ruleaza(maxZile)
+  sp.arataZile()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Simulator /> */}
     </div>
   );
 }
