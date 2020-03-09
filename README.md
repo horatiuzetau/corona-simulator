@@ -16,8 +16,8 @@ Sambata si duminica, sansa scade la 0.6 din sansa actuala, deoarece activitatea 
 Programul se deschide cu npm install si apoi npm start, avand tot setupul pentru React instalat. 
 Se poate folosi si fara, dar daca ar fi implementat intr-un html. SecondPlan ete centrul de comanda. 
 ex: 
-    let sp = new SecondPlan()
-    sp.ruleaza(maxZile) // ruleaza simulatorul pe un numar de zile ! RECOMAND 4-5 zile pentru ca se msica greu cand prinde multe instante
-    sp.arataZile() //raport pe zile
+* let sp = new SecondPlan()
+* sp.ruleaza(maxZile) // ruleaza simulatorul pe un numar de zile ! RECOMAND 4-5 zile pentru ca se msica greu cand prinde multe instante
+* sp.arataZile() //raport pe zile
 
-Programul se misca putin cam incet. Nu stiu de ce; se creaza multe instante de persoana.
+Programul se misca putin cam incet. Nu stiu de ce; se creaza multe instante de persoana. Prima data am incercat in React dar se misca mult prea greu, asa ca am facut pur JavaScript. Simulator este componenta initiala.
