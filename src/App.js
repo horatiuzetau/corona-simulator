@@ -8,7 +8,7 @@ function App() {
   // au fost contagiati 
   let sp = new SecondPlan();
 
-  let maxZile = 5
+  let maxZile = 3
   
   sp.ruleaza(maxZile)
   sp.arataZile()
