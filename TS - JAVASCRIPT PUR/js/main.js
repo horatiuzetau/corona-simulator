@@ -208,7 +208,7 @@ class Person {
                     new Interval(0, 0), // pubertatea
                     new Interval(0, 2), // adolescenta
                     new Interval(0, 4), // tanar
-                    new Interval(1, 8), // adult
+                    new Interval(0, 8), // adult
                     new Interval(0, 5), // matur
                     new Interval(0, 1), // presenescenta
                     new Interval(0, 0), // varstnic   
@@ -222,9 +222,9 @@ class Person {
                     new Interval(0, 0), // scolar mic
                     new Interval(0, 0), // pubertatea
                     new Interval(0, 0), // adolescenta
-                    new Interval(1, 6), // tanar
-                    new Interval(1, 7), // adult
-                    new Interval(1, 5), // matur
+                    new Interval(0, 6), // tanar
+                    new Interval(0, 7), // adult
+                    new Interval(0, 5), // matur
                     new Interval(0, 2), // presenescenta
                     new Interval(0, 3), // varstnic   
                     new Interval(0, 1), // batran
@@ -238,9 +238,9 @@ class Person {
                     new Interval(0, 3), // pubertatea
                     new Interval(0, 3), // adolescenta
                     new Interval(0, 6), // tanar
-                    new Interval(0, 12), // adult
+                    new Interval(0, 6), // adult
                     new Interval(0, 7), // matur
-                    new Interval(0, 10), // presenescenta
+                    new Interval(0, 6), // presenescenta
                     new Interval(0, 2), // varstnic   
                     new Interval(0, 1), // batran
                 )
@@ -285,7 +285,7 @@ class Person {
                     new Interval(0, 2), // tanar
                     new Interval(0, 4), // adult
                     new Interval(0, 4), // matur
-                    new Interval(1, 5), // presenescenta
+                    new Interval(0, 5), // presenescenta
                     new Interval(0, 4), // varstnic   
                     new Interval(0, 4), // batran
                 )
@@ -483,27 +483,28 @@ class Simulator {
             console.log("-Categorii de varsta")
             console.log("-------------------------")
             console.log("0-3 ani - (COPIL MIC) contagiosi: " + z.categoriiDeVarstaContagiosi('COPIL MIC'))
+            console.log("3-7 ani - (PRESCOLAR) contagiosi: " + z.categoriiDeVarstaContagiosi('PRESCOLAR'))
+            console.log("7-11 ani - (SCOLAR MIC) contagiosi: " + z.categoriiDeVarstaContagiosi('SCOLAR MIC'))
+            console.log("11-15 ani - (PUBERTATE) contagiosi: " + z.categoriiDeVarstaContagiosi('PUBERTATE'))
+            console.log("15-18 ani - (ADOLESCENTI) contagiosi: " + z.categoriiDeVarstaContagiosi('ADOLESCENTA'))
+            console.log("18-25 - (TANAR) contagiosi: " + z.categoriiDeVarstaContagiosi('TANAR'))
+            console.log("25-35 - (ADULT) contagiosi: " + z.categoriiDeVarstaContagiosi('ADULT'))
+            console.log("35-50 - (MATUR) contagiosi: " + z.categoriiDeVarstaContagiosi('MATUR'))
+            console.log("50-64 - (PRESENESCENTA) contagiosi: " + z.categoriiDeVarstaContagiosi('PRESENESCENTA'))
+            console.log("64-75 - (VARSTNIC) contagiosi: " + z.categoriiDeVarstaContagiosi('VARSTNIC'))
+            console.log("75-85 - (BATRAN) contagiosi: " + z.categoriiDeVarstaContagiosi('BATRAN'))
+            console.log(" " )            
             console.log("0-3 ani - (COPIL MIC) molipsiti: " + z.categoriiDeVarstaMolipsiti('COPIL MIC'))
             console.log("3-7 ani - (PRESCOLAR) molipsiti: " + z.categoriiDeVarstaMolipsiti('PRESCOLAR'))
-            console.log("3-7 ani - (PRESCOLAR) molipsiti: " + z.categoriiDeVarstaMolipsiti('PRESCOLAR'))
-            console.log("7-11 ani - (SCOLAR MIC) molipsiti: " + z.categoriiDeVarstaMolipsiti('SCOLAR MIC'))
             console.log("7-11 ani - (SCOLAR MIC) molipsiti: " + z.categoriiDeVarstaMolipsiti('SCOLAR MIC'))
             console.log("11-15 ani - (PUBERTATE) molipsiti: " + z.categoriiDeVarstaMolipsiti('PUBERTATE'))
-            console.log("11-15 ani - (PUBERTATE) molipsiti: " + z.categoriiDeVarstaMolipsiti('PUBERTATE'))
-            console.log("15-18 ani - (ADOLESCENTI) contagiosi: " + z.categoriiDeVarstaContagiosi('ADOLESCENTA'))
             console.log("15-18 ani - (ADOLESCENTI) molipsiti: " + z.categoriiDeVarstaMolipsiti('ADOLESCENTA'))
             console.log("18-25 - (TANAR) molipsiti: " + z.categoriiDeVarstaMolipsiti('TANAR'))
-            console.log("18-25 - (TANAR) contagiosi: " + z.categoriiDeVarstaContagiosi('TANAR'))
             console.log("25-35 - (ADULT) molipsiti: " + z.categoriiDeVarstaMolipsiti('ADULT'))
-            console.log("25-35 - (ADULT) contagiosi: " + z.categoriiDeVarstaContagiosi('ADULT'))
             console.log("35-50 - (MATUR) molipsiti: " + z.categoriiDeVarstaMolipsiti('MATUR'))
-            console.log("35-50 - (MATUR) contagiosi: " + z.categoriiDeVarstaContagiosi('MATUR'))
             console.log("50-64 - (PRESENESCENTA) molipsiti: " + z.categoriiDeVarstaMolipsiti('PRESENESCENTA'))
-            console.log("50-64 - (PRESENESCENTA) contagiosi: " + z.categoriiDeVarstaContagiosi('PRESENESCENTA'))
             console.log("64-75 - (VARSTNIC) molipsiti: " + z.categoriiDeVarstaMolipsiti('VARSTNIC'))
-            console.log("64-75 - (VARSTNIC) contagiosi: " + z.categoriiDeVarstaContagiosi('VARSTNIC'))
             console.log("75-85 - (BATRAN) molipsiti: " + z.categoriiDeVarstaMolipsiti('BATRAN'))
-            console.log("75-85 - (BATRAN) contagiosi: " + z.categoriiDeVarstaContagiosi('BATRAN'))
             console.log(" " )
         }
     }   
